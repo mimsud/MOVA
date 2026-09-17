@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        120deg,
+        #000000,
+        #1a1a1a,
+        #444444,
+        #202020,
+        #000000
+    );
+    background-size: 400% 400%;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    animation: aurora 25s ease infinite;
+}
+
+/* Background animation */
+@keyframes aurora {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* MOVA glow */
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    50% {
+        text-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+    }
+
+    100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Sections */
+section {
+    margin-bottom: 80px;
+}
+
+section:first-of-type {
+    padding: 140px 20px;
+}
+
+/* MOVA */
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 20px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+/* Section title */
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Service cards */
+.service {
+    background-color: #1a1a1a;
+    padding: 0;
+    margin: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    font-family: "Tahoma";
+    transition: 0.4s;
+    width: 150px;
+    height: 65px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Card hover */
+.service:hover {
+    transform: scale(1.08);
+    height: 140px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Service title */
+.service h3 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 65px;
+    transition: 0.4s;
+}
+
+/* Move title up */
+.service:hover h3 {
+    line-height: 45px;
+}
+
+/* Service description */
+.service p {
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0;
+    transition: 0.4s;
+    margin: 15px 8px 0 8px;
+}
+
+/* Show description */
+.service:hover p {
+    opacity: 1;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+/* Tagline */
+.tagline {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: "Tahoma";
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Button */
+button {
+    background-color: white;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s;
+    font-family: "Tahoma";
+}
+
+button:hover {
+    background-color: gray;
+}
+
+/* Start button */
+.start-btn {
+    font-size: 16px;
+    padding: 14px 35px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Tahoma";
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    font-size: 14px;
+}
