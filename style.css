@@ -2,14 +2,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(
-        120deg,
-        #000000,
-        #1a1a1a,
-        #444444,
-        #202020,
-        #000000
-    );
+  background: linear-gradient(
+    120deg,
+    #071820,
+    #102b38,
+    #1b4352,
+    #123340,
+    #071820
+ );
     background-size: 400% 400%;
     color: white;
     padding: 40px;
@@ -238,7 +238,7 @@ footer {
     background-color: #1a1a1a;
     padding: 30px;
     border-radius: 30px;
-    width: 420px;
+    width: 500px;
     text-align: center;
     margin: 20px auto;
     transition: 0.4s;
@@ -248,7 +248,7 @@ footer {
 }
 
 .project h3 {
-    font-size: 32px;
+    font-size: 40px;
     margin-top: 25px;
     font-family: "Tahoma";  
     margin-bottom: 0;
@@ -259,10 +259,81 @@ footer {
 }
 /* img project */
 .project img {
-    width: 415px;
+    width: 450px;
     border-radius: 25px;
     transition: 0.4s;
 }
 .project img:hover{
     transform: scale(1.03);
+}
+
+/*about*/
+#about {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 500px;
+    margin: 5px auto;
+    transition: 0.4s;
+}
+
+#about h2{
+    font-size: 50px;
+    font-family: "Tahoma";
+    width: 30px auto;
+    text-align: center;
+
+}
+#about p{
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+
+}
+
+/*tools*/
+.tools{
+    background-color: #08151b;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 500px;
+    transition: 0.4s;
+}
+
+.tools:hover{
+    transform: scale(1.05);
+}
+
+.tools h3{
+    font-size: 32px;
+    font-family: "Tahoma";
+}
+
+.tools p{
+    font-family: "Arial" ,sans-serif;
+    font-size: 24px;
+}
+
+.tools input{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.tools button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tools button:hover {
+    background-color: gray;
 }
